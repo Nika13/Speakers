@@ -1,0 +1,46 @@
+#main{
+	max-width: 600px;
+	height: 610px;
+	margin-top: 15px;
+}
+.scroll{
+	overflow-y: scroll;
+	flex-basis: 100%;
+}
+.scroll a{
+	display: flex;
+	border-bottom: 1px solid RoyalBlue;
+	text-decoration: none;
+	white-space: nowrap;
+	min-height: 30px;
+	padding: 20px;
+}
+.scroll a:nth-child(first){
+	padding-top: 10px;
+
+}
+.scroll a:hover{
+	background-color: rgba( 72, 118, 255, 0.21 );
+	text-decoration: none;
+}
+.spisok{
+	padding-top: 5px;
+	padding-left:20px;
+	font-weight: bold;
+	color: White;
+	font-size: 20px;
+	border-bottom: 1px solid RoyalBlue;
+	background-color: RoyalBlue;
+}
+#form-addroom{
+	padding: 20px 0px 12px 15px ;
+	font-weight: bold;
+	border-bottom: 1px solid RoyalBlue;
+	color: #27408B;
+}
+a{
+	color: RoyalBlue;
+}
+span{
+	padding-left: 8px;
+}

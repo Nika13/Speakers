@@ -1,0 +1,66 @@
+
+.work-window{
+	flex-basis: 95%;
+	display: flex;
+	margin: 0px 5px 0px 5px;
+}
+.work-window .window{
+	flex-basis: 75%;
+	padding-left: 15px;
+	border-right: 2px solid RoyalBlue;
+}
+.work-window .list{
+	flex-basis: 25%;
+	padding-left: 10px;
+	overflow-y: scroll;
+}
+.work-window .list p{
+	margin-left: 10px;
+	margin-top: 5px;
+	color: #27408B;
+	font-weight: bold;
+}
+#chat{
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.enter{
+	border-top: 1px solid RoyalBlue;
+	display: flex;
+}
+.enter .enter-text{
+	flex-basis: 100%;
+	min-height: 50px;
+	padding-left: 10px;
+}
+a{
+	color: RoyalBlue;
+}
+.auth{
+	font-weight: bold;
+	color: #27408B;
+}
+.head{
+	margin-left: -8px;
+}
+.currentroom{
+	color: white;
+	background-color: RoyalBlue;
+	margin-top: -5px;
+	padding-left: 10px;
+}
+.link{
+	position: relative;
+}
+.exit{
+	position: absolute !important;
+	top: -18px;
+	right: -5px;
+	color: grey;
+	margin-top: 5px;
+}
+.exit:hover
+	height: 1px;
+	width: 1px;
+	display: block;
+}

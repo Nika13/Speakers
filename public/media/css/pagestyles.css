@@ -1,0 +1,10 @@
+.head{
+	flex-basis: 5%;
+	padding-top: 5px;
+	padding-left:8px;
+	font-weight: bold;
+	font-size: 19px;
+}
+.head .nav li{
+	z-index: 2;
+}

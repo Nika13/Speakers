@@ -17,8 +17,8 @@
 @endsection
 
 @section('content')
-
-<div class="content" id="main">
+	<div class="col-xs-12 col-md-12 col-sm-12" >
+	<div class="content" id="main" style="height: 600px; width:100%; margin:25px 0 0 0;">
 @include ('templates.rooms')
 	<div class="work-window" id="work-window">
 		<div class="window" id="chat">
@@ -45,6 +45,7 @@
 		<input class="enter-button" type="submit" value="Ввод" id="enter">
 	</div>
 	</form>
+	</div>
 	</div>
 
 @endsection

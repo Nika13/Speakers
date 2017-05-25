@@ -11,14 +11,20 @@
 	<div>
 	<div id="profile">
 	<div id="user-avatar">
-		<img src="" class="img-rounded">
+		@if (isset($user->profiles->useravatar))
+			<img src="{{asset('/media/photos/'.$user->profiles->useravatar)}}" >
+		@else
+			<img src="{{asset('/media/photos/1.jpg')}}" >
+		@endif
 	</div>
-
+	
 	<div id="userprofile">
 		<div id="name">
 			<div id="user-name">
 				@if (isset($user->profiles))
 					<b><span class="input-xlarge uneditable-input">{{$user->profiles->username}}</span></b>
+				@else
+					<b><span class="input-xlarge uneditable-input">Аноним</span></b>
 				@endif
 			</div>
 			<div id="user-surname">
@@ -51,7 +57,19 @@
 		@endif
 	</div>
 </div>
-	<div class="buttons"><a href="{{ asset('addprivateroom/'.$user->id) }}" class="btn btn-default">Создать приватную комнату</a>
-	<a href="{{ asset('addprivateroom/'.$user->id) }}" class="btn btn-default">Добавить в друзья</a></div>
+	<div class="buttons">
+	    <a href="{{ asset('addprivateroom/'.$user->id) }}" class="btn btn-default">Создать приватную комнату</a>
+			{{ $flag = false }}
+			@foreach ($me->friends()->get() as $one)
+				@if($one->friend_user_id == $user->id)
+					<? $flag = true ?>
+					@endif
+			@endforeach
+			@if ($flag)
+				<a href="" class="btn btn-success">Друзья</a>
+			@else
+				<a href="{{ asset('addfriend/'.$user->id) }}" class="btn btn-default">Добавить в друзья</a>
+			@endif
+</div>
 </div>
 @endsection

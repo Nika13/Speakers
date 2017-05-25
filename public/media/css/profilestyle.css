@@ -1,0 +1,59 @@
+#main-profile{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 10px;
+	background-color: white;
+	height: 610px;
+	width: 450px;
+	border: 1px solid RoyalBlue;
+	margin-top: 15px;
+}
+span{
+	padding-left: 5px;
+}
+#profile{
+	display: flex;
+}
+#name{
+	padding-left: 20px;
+	margin-top: 15px;
+	display: flex;
+}
+#user-avatar{
+	margin: 10px;
+	border: 1px solid RoyalBlue;
+	border-radius:10px;
+}
+#user-avatar img{
+	width: 200px;
+	height: 300px;
+	border-radius:10px;
+	
+}
+#user-sex{
+	padding-top: 20px;
+}
+#user-contacts{
+	padding-top: 10px;
+	display: flex;
+	flex-direction: column;
+	max-width: 200px;
+}
+.about{
+	padding-left: 15px;
+}
+#user-info{
+	min-height: 50px;
+	margin: 10px;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid RoyalBlue;
+	border-radius: 14px;
+}
+.buttons{
+	margin: 30px;
+	margin-top: 15px;
+	padding-left: 10px;
+}
