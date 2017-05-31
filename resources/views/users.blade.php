@@ -15,7 +15,7 @@
 		@endforeach
 		<p>Друзья:</p>
 		@foreach($friends as $one)
-			<p><a href="{{asset('user/'.$one->friend_user_id)}}">{{$one->whoisfriends->name}}</a></p>
+			
 		@endforeach
 	</div>
 </div>
